@@ -1,0 +1,38 @@
+{
+  "name": "grokbot-webhook-adapter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verify incoming webhooks (Fathom, GitHub, Stripe, ...) and forward them to Grok Bot routine webhooks with the Authorization header they require. Runs on Vercel.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Revve-AI/grokbot-webhook-adapter.git"
+  },
+  "homepage": "https://github.com/Revve-AI/grokbot-webhook-adapter#readme",
+  "bugs": {
+    "url": "https://github.com/Revve-AI/grokbot-webhook-adapter/issues"
+  },
+  "keywords": [
+    "webhook",
+    "vercel",
+    "fathom",
+    "grok-bot",
+    "hmac",
+    "standard-webhooks"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "standardwebhooks": "^1.1.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
